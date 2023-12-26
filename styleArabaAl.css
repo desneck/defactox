@@ -1,0 +1,392 @@
+.navbar{
+    background-color:blue;
+    height: 60px;
+    color: black;
+    position: sticky;
+    top: 0;
+}
+.mini-navbar{
+    background-color:white;
+    height: 30px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    color: blue;
+    justify-content: space-between;
+    
+}
+.mini-navbar-list1{ 
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 40px;
+    list-style: none;
+    padding-bottom: 0px;
+    
+}
+.mini-navbar-list2{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 20px;
+    list-style: none;
+    margin-right: 32px;
+}
+
+.container{
+    display: flex;
+    margin: 0px;
+    vertical-align: baseline;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+  
+.grid-container-menu{
+    display:-webkit-box;
+    display: flex;
+    margin: 40px;
+    padding: 0px;
+    padding-top: 0px;
+    border: 0;
+    vertical-align: baseline;
+    font: inherit;
+    box-sizing: border-box;
+}
+.grid-column{
+    width: 240px;
+    height: 100%;
+    border: 1px solid #dfe3e6;
+    border-radius: 4px;
+    flex-grow: 0;
+    background-color: #fff;
+    display: block;
+}
+.grid1-checkbox{
+    margin-bottom: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.grid2-list{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 250px;
+    padding-left: 30px;
+    margin-top: 15px;
+    list-style: none;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: gainsboro;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} 
+
+.grid3-min{
+    border-radius: 4px;
+    background-color: #fff;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    width: 60px;
+    margin-left: 10px;
+    text-align: left;
+    padding-right: 10px;
+    
+}
+.grid3-max{
+    border-radius: 4px;
+    background-color: #fff;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    width: 60px;
+    text-align: left;
+    padding-left: 20px;
+    
+}
+.grid3-tooltip-text{
+        visibility: hidden;
+}
+.grid6{
+    background-color: #FCF3CF;
+
+}
+.grid6-item{
+    padding-top: 5px;
+    
+}
+.grid6-checkbox1 {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.grid6-checkbox2{
+    margin-bottom: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.grid6-checkbox1:hover{
+    color: rgb(183, 6, 6);
+}
+.grid6-checkbox2:hover{
+    color: rgb(183, 6, 6);
+}
+.grid1-checkbox:hover{
+    color: rgb(183, 6, 6);
+}
+.grid7-checkbox1:hover{
+    color: rgb(183, 6, 6);
+}
+.grid7-checkbox2:hover{
+    color: rgb(183, 6, 6);
+}
+.grid7-checkbox3:hover{
+    color: rgb(183, 6, 6);
+}
+.grid8-checkbox1:hover{
+    color: rgb(183, 6, 6);
+}
+.grid8-checkbox2:hover{
+    color: rgb(183, 6, 6);
+}
+.grid8-checkbox3:hover{
+    color: rgb(183, 6, 6);
+}
+.grid8-checkbox4:hover{
+    color: rgb(183, 6, 6);
+}
+.grid8-checkbox5:hover{
+    color: rgb(183, 6, 6);
+}
+.grid9-checkbox1:hover{
+    color: rgb(183, 6, 6);
+}
+.grid9-checkbox2:hover{
+    color: rgb(183, 6, 6);
+}
+.grid9-checkbox3:hover{
+    color: rgb(183, 6, 6);
+}
+
+.dropdown-item1-content{
+    padding: 14px 18px 12px 20px;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    cursor: pointer;
+    /* content: "\e910"; */
+    position: relative;
+    vertical-align: baseline;
+    margin-bottom: 10px;
+}
+.dropdown-item1::after{
+    transform: rotate(180deg);
+    -webkit-font-smoothing: antialiased;
+    transition: rotate .3s;
+    /* content: "\e910"; */
+    display: block;
+    width: 13px;
+    height: 10px;
+   
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+}
+.kasaTipi_1{
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 4px;
+    border: solid 1px #dfe3e6;
+    background-color: #fff;
+    margin-right: 10px;
+    line-height: 1.3em;
+}
+.right-container{
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    width: 1000px;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: baseline;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+.top-header{
+    display: flex;
+    background-color: #fff;
+    -webkit-box-pack: justify;
+    border: 1px solid #dfe3e6;
+    border-radius: 4px;
+    margin-left: 0px;
+    vertical-align: baseline;   
+}
+.right-container-bottom{
+    display: flex;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+.right-container-bottom-button{
+    display: flex;
+    align-self: flex-end;
+    margin-right: auto;
+    vertical-align: baseline;
+}
+
+.right-container-bottom-comboBox{
+    position: relative;
+    height: 30px;
+    width:200;
+    border-radius: 4px;
+    border: solid 1px #dfe3e6;
+    background-color: #fff;
+    margin-top: 10px;
+    padding-bottom: 0px;
+}
+.a{
+    width: 200px;
+    background-color: "blue";
+    height: 30px;
+}
+.cars-container{
+    border-radius: 0 4px 4px 4px;
+    padding-top: 15px;
+    margin-bottom: 30px;
+    display: block;
+}
+.cars-list{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch
+    
+}
+.cars-list-item{
+    width:calc((100% / 3) -20px);
+    margin: 0px 10px 30px 10px;
+    box-shadow: 0 -2px 18px -4px rgb(0 0 0 / 20%);
+    transition: all .3s;
+    border-radius: 10px;
+    position: relative
+}   
+.cars-favorite{
+    color: #cd1f27;
+    top: 10px;
+    right: 10px;
+    font-weight: 10px;
+} 
+.cars-image-container{
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+.cars-list-container-link{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    border-radius: 10px;
+    height: 100%;
+}
+.cars-list-detail{
+    width: 250px;
+    padding: 15px;
+
+}
+.category-title{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+}
+.title{
+    font-size: 20px;
+    line-height: 1.25;
+
+}
+.brand-detail{
+    font-size: 16px;
+    color: #959ca1;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+}
+.category-info{
+    font-size: 16px;
+}
+.category-price{
+    font-size: 24px;
+    line-height: 47px;
+    margin-top: 8px;
+    font-weight: 600;
+}
+.category-credit{
+    display: flex;
+    align-items: baseline;
+    font-size: 14px;
+}
+.category-credit-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding: 3px;
+    
+}
+.category-credit-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+
+}
+.category-credit-button{
+    padding: 5px 10px;
+    background-color: #f3f5f8;
+    border-radius: 5px;
+    color: #3374db;
+    font-size: 16px;
+    border: 0px;
+}
+
+
+
+
+.menu-container{
+    float: left;
+    width: 200px;
+    height: auto;
+    
+}
+
+
+.profile-container{
+
+    width: 200px;
+    height: 200px;
+   
+}

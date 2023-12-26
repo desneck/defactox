@@ -1,0 +1,81 @@
+html{
+    padding: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+.breadcrumbs{
+    font-size: 12px;
+    color: blue;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: ;
+    object-fit: cover;
+    
+}
+.mini{
+    width: 756px;
+    overflow: hidden;
+    white-space: nowrap;
+
+
+}
+img{
+    border-radius: 10px;
+}
+.main{
+    border-radius: 20px;
+}
+.arac_bilgisi{
+    display: flex;
+    flex-wrap: wrap;
+   
+    margin-top: 0;
+    padding-top: 0;
+    flex-direction: column;
+    padding-left: 1rem;
+    
+    width: 321px;
+}
+.arac_ozellikleri{
+    text-align: center;   
+}
+.arac_ozellikleri ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.arac_ozellikleri h3{
+    text-align:left;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.list li{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+    margin: 0;
+    width: 30%;
+    border-bottom: 1px solid #ccc;
+
+}
+button{
+    background-color: #3274db;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    width : 100%;
+}
