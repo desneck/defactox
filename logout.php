@@ -5,7 +5,7 @@ session_start();
 if(isset($_SESSION["logged_in"])){
     session_destroy();
 }
-header("Location:landingPage.php");
+header("Location:index.php");
 
 
 

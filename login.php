@@ -8,7 +8,7 @@ if(isset($_POST['login'])){
         session_start();
         $_SESSION["logged_in"] = true;
         $_SESSION["username"] = $username;
-        header("Location: landingPage.php");
+        header("Location: index.php");
         exit();
     }else{
         $errMsg = "Kullanıcı adı veya şifre hatalı.";

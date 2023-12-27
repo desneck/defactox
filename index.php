@@ -16,15 +16,29 @@
   .navbar {
     background: #fff;
   }
+
+  /* Custom styles */
+  .carousel {
+    margin-bottom: 30px; /* Distance between carousel and products */
+  }
+
+  .product-card {
+    margin-bottom: 15px; /* Distance between products */
+  }
   
-  /* Add your custom styles here */
+  .product-container {
+    padding-top: 20px; /* Additional top space for products */
+  }
+  
 </style>
 </head>
 <body>
     
 <?php 
+session_start();
 include 'connect.php'; // Make sure this path is correct
 ?>
+
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -47,6 +61,16 @@ include 'connect.php'; // Make sure this path is correct
         <li class="nav-item">
           <a class="nav-link" href="#">BEBEK</a>
         </li>
+        <?php
+        if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+            // Display Logout link if logged in
+            echo '<li class="nav-item"><a class="nav-link" href="logout.php">Çıkış</a></li>';
+        } else {
+            // Display Login and Register links if not logged in
+            echo '<li class="nav-item"><a class="nav-link" href="login.php">Giris Yap</a></li>';
+            echo '<li class="nav-item"><a class="nav-link" href="register.php">Kayit Ol</a></li>';
+        }
+        ?>
       </ul>
     </div>
   </div>
@@ -78,6 +102,9 @@ include 'connect.php'; // Make sure this path is correct
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+<div>
+  <a href="tum_urunler.php">Tumu</a>
+</div>
 <div class="container product-container">
   <div class="row">
     <?php
@@ -92,6 +119,7 @@ include 'connect.php'; // Make sure this path is correct
             echo "<p class='card-text'>" . $row["beden"] . " - " . $row["renk"] . "</p>";
             echo "<p class='card-text'>Price: " . $row["fiyat"] . "</p>";
             echo "<p class='card-text'>Rating: " . $row["yildiz"] . "</p>";
+            echo "<a href='detay.php?id=" . $row["id"] . "' class='btn btn-primary'>Detay</a>";
             echo "</div>";
             echo "</div>";
             echo "</div>";
