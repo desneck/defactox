@@ -32,6 +32,7 @@ if(isset($_POST['login'])){
             font-family: 'Open Sans', sans-serif;
             background: #f7f7f7;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
@@ -124,11 +125,15 @@ if(isset($_POST['login'])){
     </style>
 </head>
 <body>
+    <?php
+        include 'navbar.php';
+    ?>
 
 <div class="login-container">
     <div class="defacto-logo">DeFacto</div>
     <?php if(isset($errMsg) && $errMsg): ?>
         <div class="errmsg"><?php echo $errMsg; ?></div>
+
     <?php endif; ?>
     <form class="form" action="login.php" method="POST">
         <h2 class="login-title">Üye Girişi</h2>

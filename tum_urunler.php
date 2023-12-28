@@ -21,46 +21,8 @@
 <body>
 
     <?php
-    session_start();
-    include 'connect.php'; // Make sure this path is correct
+    include "navbar.php";
     ?>
-
-    <!-- Navigation here -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">DeFacto</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">KADIN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ERKEK</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">ÇOCUK</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BEBEK</a>
-                    </li>
-                    <?php
-                    if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
-                        // Display Logout link if logged in
-                        echo '<li class="nav-item"><a class="nav-link" href="logout.php">Çıkış</a></li>';
-                    } else {
-                        // Display Login and Register links if not logged in
-                        echo '<li class="nav-item"><a class="nav-link" href="login.php">Giris Yap</a></li>';
-                        echo '<li class="nav-item"><a class="nav-link" href="register.php">Kayit Ol</a></li>';
-                    }
-                    ?>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <div class="container product-container">
         <h2>All Products</h2>
 
@@ -109,6 +71,8 @@
                     echo "<p class='card-text'>Price: " . $row["fiyat"] . "</p>";
                     echo "<p class='card-text'>Rating: " . $row["yildiz"] . "</p>";
                     echo "<a href='detay.php?id=" . $row["id"] . "' class='btn btn-primary'>Detay</a>";
+                    echo "<a href='add_to_cart.php?id=" . $row["id"] . "' class='btn btn-secondary'>Add to Cart</a>";
+
                     echo "</div>";
                     echo "</div>";
                     echo "</div>";
